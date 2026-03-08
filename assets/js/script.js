@@ -52,12 +52,12 @@ document.addEventListener('visibilitychange', function () {
 // Typed.js effect
 var typed = new Typed(".typing-text", {
     strings: [
-        ".NET Development",
-        "Angular Development",
-        "Cloud Architecture",
-        "Microservices Design",
-        "Full Stack Engineering",
-        "Software Deployment"
+        ".NET Core &amp; Web APIs",
+        "Angular &amp; TypeScript",
+        "Azure Cloud &amp; DevOps",
+        "Microservices Architecture",
+        "Enterprise SaaS Platforms",
+        "Team Leadership &amp; Mentoring"
     ],
     loop: true,
     typeSpeed: 55,
