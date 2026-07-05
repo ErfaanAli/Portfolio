@@ -115,15 +115,26 @@
 
   pulses.forEach((p, i) => setTimeout(() => launchPulse(p), i * 700));
 
-  // Mouse parallax
+  // Pointer parallax — mouse on desktop, touch drag on mobile
   let targetRotX = 0;
   let targetRotY = 0;
-  window.addEventListener("mousemove", (e) => {
-    const nx = (e.clientX / window.innerWidth) * 2 - 1;
-    const ny = (e.clientY / window.innerHeight) * 2 - 1;
+
+  function setTargetFromPoint(x, y) {
+    const nx = (x / window.innerWidth) * 2 - 1;
+    const ny = (y / window.innerHeight) * 2 - 1;
     targetRotY = nx * 0.35;
     targetRotX = ny * 0.2;
-  });
+  }
+
+  window.addEventListener("mousemove", (e) => setTargetFromPoint(e.clientX, e.clientY));
+  window.addEventListener(
+    "touchmove",
+    (e) => {
+      if (!e.touches.length) return;
+      setTargetFromPoint(e.touches[0].clientX, e.touches[0].clientY);
+    },
+    { passive: true }
+  );
 
   let visible = true;
   document.addEventListener("visibilitychange", () => {
@@ -132,35 +143,39 @@
 
   const clock = new THREE.Clock();
 
+  // Respect reduced-motion by dropping the idle auto-drift, but keep the
+  // graph interactive (pointer parallax + data pulses) either way — freezing
+  // the whole scene made the hero look broken/static rather than accessible.
+  const idleSpin = prefersReducedMotion ? 0 : 0.0009;
+  const floatAmount = prefersReducedMotion ? 0 : 0.6;
+
   function animate() {
     requestAnimationFrame(animate);
     if (!visible) return;
 
     const t = clock.getElapsedTime();
 
-    if (!prefersReducedMotion) {
-      group.rotation.y += (targetRotY - group.rotation.y) * 0.02 + 0.0009;
-      group.rotation.x += (targetRotX - group.rotation.x) * 0.02;
+    group.rotation.y += (targetRotY - group.rotation.y) * 0.02 + idleSpin;
+    group.rotation.x += (targetRotX - group.rotation.x) * 0.02;
 
-      nodes.forEach((n) => {
-        n.mesh.position.x = n.basePos.x + Math.sin(t * 0.4 + n.phase) * 0.6;
-        n.mesh.position.y = n.basePos.y + Math.cos(t * 0.35 + n.phase) * 0.6;
-      });
-      updateLinePositions();
+    nodes.forEach((n) => {
+      n.mesh.position.x = n.basePos.x + Math.sin(t * 0.4 + n.phase) * floatAmount;
+      n.mesh.position.y = n.basePos.y + Math.cos(t * 0.35 + n.phase) * floatAmount;
+    });
+    updateLinePositions();
 
-      pulses.forEach((p) => {
-        if (!p.edge) return;
-        p.t += p.speed;
-        if (p.t >= 1) {
-          launchPulse(p);
-          return;
-        }
-        const a = nodes[p.edge.a].mesh.position;
-        const b = nodes[p.edge.b].mesh.position;
-        p.mesh.position.lerpVectors(a, b, p.t);
-        p.mesh.material.opacity = Math.sin(p.t * Math.PI) * 0.9;
-      });
-    }
+    pulses.forEach((p) => {
+      if (!p.edge) return;
+      p.t += p.speed;
+      if (p.t >= 1) {
+        launchPulse(p);
+        return;
+      }
+      const a = nodes[p.edge.a].mesh.position;
+      const b = nodes[p.edge.b].mesh.position;
+      p.mesh.position.lerpVectors(a, b, p.t);
+      p.mesh.material.opacity = Math.sin(p.t * Math.PI) * 0.9;
+    });
 
     renderer.render(scene, camera);
   }
