@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords"
-    content="Irfan Ali, portfolio, Senior Software Engineer, .NET, Angular, Azure, backend developer, full stack developer" />
-  <meta name="description" content="Irfan Ali — Freelance Senior Software Engineer. 7+ years building scalable .NET backends, Angular frontends & Azure cloud solutions for businesses worldwide." />
+    content="Irfan Ali, portfolio, Senior Software Engineer, .NET, Angular, Azure, AI integration, backend developer, full stack developer" />
+  <meta name="description" content="Irfan Ali — Senior Software Engineer. 8+ years architecting .NET backends, Angular/React frontends, Azure cloud infrastructure and AI-powered systems for government and enterprise platforms." />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- Font Awesome -->
@@ -19,11 +19,11 @@
   <title>Portfolio | Irfan Ali</title>
 </head>
 
-<body oncontextmenu="return false">
+<body>
 
   <!-- navbar starts -->
   <header>
-    <a href="/" class="logo">Irfan <span>Ali</span></a>
+    <a href="./" class="logo">Irfan <span>Ali</span></a>
 
     <div id="menu" class="fas fa-bars"></div>
     <nav class="navbar">
@@ -43,16 +43,27 @@
 
   <!-- hero section starts -->
   <section class="home" id="home">
-    <div id="particles-js"></div>
+    <canvas id="network-canvas"></canvas>
 
     <div class="content">
       <div class="availability-badge">
-        <span class="badge-dot"></span> Available for Freelance Projects
+        <span class="badge-dot"></span> Open to select freelance engagements
       </div>
-      <p class="greeting">Senior Software Engineer &amp; Team Lead</p>
+      <p class="greeting">Senior Software Engineer</p>
       <h2>I'm Irfan <span>Ali</span></h2>
-      <p class="hero-subtitle">I architect enterprise-grade .NET systems, Angular frontends &amp; Azure cloud infrastructure — trusted by government &amp; SaaS clients across KSA &amp; UK &amp; Australia &amp; Canada.</p>
-      <p>I specialize in <span class="typing-text"></span></p>
+      <p class="hero-subtitle">I design and build the backend architecture, cloud infrastructure and — lately — the AI-assisted systems behind platforms that governments and enterprises can't afford to have go down. Currently shipping a national mining-licensing platform for Saudi Arabia's Ministry of Industry &amp; Mineral Resources.</p>
+      <p class="hero-typed-line"><span class="prompt">&gt;</span><span class="typing-text"></span></p>
+
+      <div class="hero-btns">
+        <a href="#experience" class="btn-primary">
+          <span>View Experience</span>
+          <i class="fas fa-arrow-down"></i>
+        </a>
+        <a href="https://drive.google.com/file/d/1a_-uNI6Rkoza3Lg0Oy4TzOaKX4Z7FLZg/view?usp=sharing" target="_blank" class="btn-outline">
+          <i class="fas fa-file-alt"></i>
+          <span>Resume</span>
+        </a>
+      </div>
 
       <div class="socials">
         <ul class="social-icons">
@@ -62,21 +73,24 @@
           <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/irfann_alee" target="_blank"><i class="fab fa-instagram"></i></a></li>
         </ul>
       </div>
-
-      <div class="hero-btns">
-        <a href="#about" class="btn-primary">
-          <span>About Me</span>
-          <i class="fas fa-arrow-down"></i>
-        </a>
-        <a href="https://drive.google.com/file/d/1a_-uNI6Rkoza3Lg0Oy4TzOaKX4Z7FLZg/view?usp=sharing" target="_blank" class="btn-outline">
-          <i class="fas fa-file-alt"></i>
-          <span>View Resume</span>
-        </a>
-      </div>
     </div>
 
-    <div class="image">
-      <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="Irfan Ali">
+    <div class="hero-widget">
+      <div class="code-card">
+        <div class="code-card-head">
+          <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+          <span class="code-card-title">profile.ts</span>
+        </div>
+        <div class="code-card-body">
+          <p><span class="c-key">whoami</span><span class="c-punc">:</span> <span class="c-str">"Irfan Ali"</span></p>
+          <p><span class="c-key">role</span><span class="c-punc">:</span> <span class="c-str">"Senior Software Engineer"</span></p>
+          <p><span class="c-key">current</span><span class="c-punc">:</span> <span class="c-str">"ESNAD — Mining Licensing Platform"</span></p>
+          <p><span class="c-key">experience</span><span class="c-punc">:</span> <span class="c-num">8</span><span class="c-str">+ years</span></p>
+          <p><span class="c-key">stack</span><span class="c-punc">:</span> [<span class="c-str">".NET"</span>, <span class="c-str">"Angular"</span>, <span class="c-str">"Azure"</span>, <span class="c-str">"AI/LLM"</span>]</p>
+          <p><span class="c-key">location</span><span class="c-punc">:</span> <span class="c-str">"Riyadh, SA"</span></p>
+          <p class="c-comment">// open to select freelance work</p>
+        </div>
+      </div>
     </div>
   </section>
   <!-- hero section ends -->
@@ -84,19 +98,22 @@
 
   <!-- about section starts -->
   <section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    <div class="section-head">
+      <span class="eyebrow">01 — Introduction</span>
+      <h2 class="heading">About <span>Me</span></h2>
+    </div>
 
     <div class="row">
       <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/profile2.png" alt="Irfan Ali">
+        <img draggable="false" src="./assets/images/profile2.jpeg" alt="Irfan Ali">
       </div>
       <div class="content">
         <h3>Irfan Ali</h3>
-        <span class="tag">Senior Software Engineer &nbsp;·&nbsp; 7+ Years</span>
+        <span class="tag">// Senior Software Engineer · 8+ Years</span>
 
         <div class="stats-row">
           <div class="stat-item">
-            <span class="stat-number">7+</span>
+            <span class="stat-number">8+</span>
             <span class="stat-label">Years Experience</span>
           </div>
           <div class="stat-item">
@@ -114,22 +131,16 @@
         </div>
 
         <div class="profile-intro">
-          <p>Over seven years building production systems at real-world scale — from multi-tenant SaaS platforms serving
-            Saudi government clients to microservices architectures processing high-volume, mission-critical requests.
-            My core stack is .NET Core, Angular &amp; Azure, reinforced with Docker, Kubernetes, and event-driven design
-            using RabbitMQ and Kafka.</p>
-          <p>As Team Lead at Geotech Overseas in Riyadh, I architect a Land Information System used by government and
-            real estate clients across Saudi Arabia — driving technical decisions, mentoring engineers, and owning
-            delivery end-to-end.</p>
-          <p>If you need an engineer who writes clean, maintainable code <em>and</em> thinks at the architecture
-            level — let's build something together.</p>
+          <p>I build enterprise software for organizations that can't afford downtime — large-scale digital services spanning public-sector and commercial clients across Saudi Arabia, Canada and Pakistan. My core stack is <strong>.NET Core, Angular &amp; Azure</strong>, reinforced with Docker, Kubernetes, and event-driven design using RabbitMQ and Kafka.</p>
+          <p>At <strong>ESNAD</strong>, I'm a hands-on architecture lead on the digital transformation of mining license issuance for the Ministry of Industry &amp; Mineral Resources — including an AI-powered natural-language-to-SQL layer and an LLM-based pipeline that turns unstructured, user-pasted text into clean, validated data.</p>
+          <p>Before that, as <strong>Team Lead at Geotech Overseas</strong>, I architected a multi-tenant Land Information System used by government and real estate clients across the Kingdom, and led a team while staying close enough to the code to ship it myself.</p>
         </div>
 
         <div class="box-container">
           <div class="box">
-            <p><span>Email: </span>irfanali.sen@gmail.com</p>
-            <p><span>Location: </span>Riyadh, Saudi Arabia</p>
-            <p><span>Origin: </span>Karachi, Pakistan</p>
+            <p><span>email</span> irfanali.sen@gmail.com</p>
+            <p><span>based_in</span> Riyadh, Saudi Arabia</p>
+            <p><span>origin</span> Karachi, Pakistan</p>
           </div>
         </div>
 
@@ -147,10 +158,25 @@
 
   <!-- services section starts -->
   <section class="services" id="services">
-    <h2 class="heading"><i class="fas fa-concierge-bell"></i> My <span>Services</span></h2>
-    <p class="section-subtitle">What I can build for your business</p>
+    <div class="section-head">
+      <span class="eyebrow">02 — Services</span>
+      <h2 class="heading">What I <span>Build</span></h2>
+      <p class="section-subtitle">Where I can plug in and move the needle on your product</p>
+    </div>
 
     <div class="services-grid">
+
+      <div class="service-card featured">
+        <div class="service-icon"><i class="fas fa-brain"></i></div>
+        <h3>AI-Powered Solutions</h3>
+        <p>Natural-language-to-SQL layers, LLM-based data ingestion pipelines that turn messy unstructured input into validated structured data, and AI-assisted engineering workflows using Claude, Copilot &amp; Codex.</p>
+        <div class="service-tags">
+          <span class="service-tag">NL-to-SQL</span>
+          <span class="service-tag">LLM Pipelines</span>
+          <span class="service-tag">Python</span>
+          <span class="service-tag">AI Tooling</span>
+        </div>
+      </div>
 
       <div class="service-card">
         <div class="service-icon"><i class="fas fa-server"></i></div>
@@ -167,12 +193,12 @@
       <div class="service-card">
         <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
         <h3>Frontend Development</h3>
-        <p>Build dynamic, responsive single-page applications with Angular and TypeScript. Pixel-perfect UI using Telerik, DevExtreme or custom components.</p>
+        <p>Build dynamic, responsive single-page applications with Angular, TypeScript and React. Pixel-perfect UI using Telerik, DevExtreme or custom components.</p>
         <div class="service-tags">
           <span class="service-tag">Angular</span>
+          <span class="service-tag">React</span>
           <span class="service-tag">TypeScript</span>
           <span class="service-tag">Telerik UI</span>
-          <span class="service-tag">Responsive</span>
         </div>
       </div>
 
@@ -202,25 +228,13 @@
 
       <div class="service-card">
         <div class="service-icon"><i class="fas fa-sitemap"></i></div>
-        <h3>System Architecture</h3>
-        <p>Architect multi-tenant SaaS platforms, design microservices from monoliths, implement OAuth/JWT security and real-time messaging systems.</p>
+        <h3>System Architecture &amp; Modernization</h3>
+        <p>Architect multi-tenant SaaS platforms, break monoliths into microservices, implement OAuth/JWT/ABAC security, real-time messaging, and migrate legacy on-prem systems to the cloud.</p>
         <div class="service-tags">
           <span class="service-tag">SaaS</span>
           <span class="service-tag">OAuth/JWT</span>
           <span class="service-tag">RabbitMQ</span>
-          <span class="service-tag">Kafka</span>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
-        <h3>Legacy Modernization</h3>
-        <p>Migrate legacy on-premise systems to the cloud, refactor monolithic apps into microservices, reduce technical debt and improve performance.</p>
-        <div class="service-tags">
           <span class="service-tag">Migration</span>
-          <span class="service-tag">Refactoring</span>
-          <span class="service-tag">Performance</span>
-          <span class="service-tag">TDD</span>
         </div>
       </div>
 
@@ -231,12 +245,21 @@
 
   <!-- skills section starts -->
   <section class="skills" id="skills">
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills &amp; <span>Abilities</span></h2>
-    <p class="section-subtitle">Technologies and tools I work with professionally</p>
+    <div class="section-head">
+      <span class="eyebrow">03 — Skills</span>
+      <h2 class="heading">Tech <span>Stack</span></h2>
+      <p class="section-subtitle">Technologies and tools I work with professionally</p>
+    </div>
 
     <div class="container">
-      <div class="row" id="skillsContainer">
-        <!-- dynamically populated from skills.json -->
+      <div class="stack-panel">
+        <div class="stack-panel-head">
+          <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+          <span class="stack-panel-title">stack.json</span>
+        </div>
+        <div class="stack-panel-body" id="skillsContainer">
+          <!-- dynamically populated from skills.json -->
+        </div>
       </div>
     </div>
   </section>
@@ -245,7 +268,10 @@
 
   <!-- education section starts -->
   <section class="education" id="education">
-    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+    <div class="section-head">
+      <span class="eyebrow">04 — Education</span>
+      <h1 class="heading">My <span>Education</span></h1>
+    </div>
     <p class="qoute">"Education is not the learning of facts, but the training of the mind to think."</p>
 
     <div class="box-container">
@@ -285,8 +311,11 @@
 
   <!-- certifications section starts -->
   <section class="certifications" id="certifications">
-    <h2 class="heading"><i class="fas fa-certificate"></i> My <span>Certifications</span></h2>
-    <p class="section-subtitle">Continuous learning and professional development</p>
+    <div class="section-head">
+      <span class="eyebrow">05 — Certifications</span>
+      <h2 class="heading">My <span>Certifications</span></h2>
+      <p class="section-subtitle">Continuous learning and professional development</p>
+    </div>
 
     <div class="certs-grid">
 
@@ -353,8 +382,11 @@
 
   <!-- work project section starts -->
   <section class="work" id="work">
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Professional <span>Projects</span></h2>
-    <p class="section-subtitle" style="color: var(--text-dim);">Enterprise systems and products I've contributed to</p>
+    <div class="section-head">
+      <span class="eyebrow">06 — Projects</span>
+      <h2 class="heading">Professional <span>Projects</span></h2>
+      <p class="section-subtitle">Enterprise systems and products I've contributed to</p>
+    </div>
 
     <div class="box-container" id="projectsContainer">
       <!-- dynamically populated from projects.json -->
@@ -365,10 +397,32 @@
 
   <!-- experience section starts -->
   <section class="experience" id="experience">
-    <h2 class="heading"><i class="fas fa-briefcase"></i> Work <span>Experience</span></h2>
-    <p class="section-subtitle" style="color: var(--text-dim);">My professional journey over the years</p>
+    <div class="section-head">
+      <span class="eyebrow">07 — Experience</span>
+      <h2 class="heading">Work <span>Experience</span></h2>
+      <p class="section-subtitle">My professional journey over the years</p>
+    </div>
 
     <div class="timeline">
+
+      <div class="container left">
+        <div class="content current">
+          <div class="tag">
+            <h2>ESNAD — Saudi Mining Services Company <span class="current-badge"><span class="badge-dot"></span>Current</span></h2>
+          </div>
+          <div class="desc">
+            <h3>Senior Software Engineer</h3>
+            <p class="exp-date"><i class="far fa-calendar-alt"></i> June 2025 — Present</p>
+            <ul>
+              <li>Key architecture lead for digitizing mining license issuance under the Ministry of Industry &amp; Mineral Resources.</li>
+              <li>Built an AI-powered natural-language-to-SQL layer, letting non-technical users query licensing data in plain English.</li>
+              <li>Designed an AI-driven data evaluation pipeline and a text-ingestion module that auto-structures unstructured, user-pasted data.</li>
+              <li>Delivered full-stack solutions (ReactJS, Python, .NET, Angular), using Claude, Copilot &amp; Codex to boost team velocity.</li>
+              <li>Mentoring engineers and leading architecture/delivery as a hands-on senior contributor on a national regulatory platform.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <div class="container right">
         <div class="content">
@@ -377,12 +431,13 @@
           </div>
           <div class="desc">
             <h3>Team Lead / Senior Software Engineer</h3>
-            <p class="exp-date"><i class="far fa-calendar-alt"></i> May 2024 — Present</p>
+            <p class="exp-date"><i class="far fa-calendar-alt"></i> May 2024 — June 2025</p>
             <ul>
               <li>Architected a multi-tenant Land Information System SaaS with .NET, Angular &amp; microservices — serving government &amp; real estate clients.</li>
               <li>Engineered a high-availability Caller Location Service for Saudi Arabia's NIC with millisecond responses using RabbitMQ &amp; Memcached.</li>
               <li>Set up Elasticsearch &amp; Kibana for centralized logging and real-time system monitoring.</li>
-              <li>Trained team members and managed deployments for multiple enterprise clients.</li>
+              <li>Built Single Sign-On (SSO) across multiple products and managed deployments for clients including SDAIA, NIC, ESNAD &amp; RCU.</li>
+              <li>Trained team members and led architecture/delivery across multiple enterprise clients.</li>
             </ul>
           </div>
         </div>
@@ -397,8 +452,9 @@
             <h3>Senior Software Engineer</h3>
             <p class="exp-date"><i class="far fa-calendar-alt"></i> March 2023 — September 2023</p>
             <ul>
-              <li>Designed RESTful APIs with .NET Core microservices, breaking down monolithic applications.</li>
+              <li>Designed RESTful APIs with .NET Core microservices, breaking down monolithic applications for client Omnivex Corporation.</li>
               <li>Integrated Redis, Azure Service Bus, Kafka &amp; Cosmos DB for high-availability distributed systems.</li>
+              <li>Implemented Kubernetes readiness/liveness probes and .NET Core health checks for self-healing deployments.</li>
               <li>Docker-containerized applications for efficient scaling and deployment.</li>
             </ul>
           </div>
@@ -431,9 +487,9 @@
             <h3>Software Engineer</h3>
             <p class="exp-date"><i class="far fa-calendar-alt"></i> September 2021 — May 2022</p>
             <ul>
-              <li>Spearheaded product development leveraging Azure App Service and VMs for improved scalability.</li>
+              <li>Independently designed and integrated multiple CRM (Hprime) projects using ASP.NET, SQL &amp; Entity Framework.</li>
               <li>Applied TDD to develop sustainable, maintainable code with measurable business value.</li>
-              <li>Reduced support tickets through effective bug fixes in CRM systems.</li>
+              <li>Reduced support ticket volume through targeted bug fixes in CRM systems.</li>
             </ul>
           </div>
         </div>
@@ -446,11 +502,11 @@
           </div>
           <div class="desc">
             <h3>Associate Software Quality Assurance Engineer</h3>
-            <p class="exp-date"><i class="far fa-calendar-alt"></i> November 2018 — August 2021</p>
+            <p class="exp-date"><i class="far fa-calendar-alt"></i> January 2018 — August 2021</p>
             <ul>
-              <li>Developed and executed manual and automated test scripts for REST &amp; SOAP APIs.</li>
+              <li>Developed and executed manual and automated test scripts for REST &amp; SOAP APIs using SoapUI.</li>
               <li>Created QA test cases, scripts and procedures for automated software maintenance.</li>
-              <li>Supported team by replicating and resolving client-reported issues in staging environments.</li>
+              <li>Supported the team by replicating and resolving client-reported issues in staging environments.</li>
             </ul>
           </div>
         </div>
@@ -463,15 +519,17 @@
 
   <!-- testimonials section starts -->
   <section class="testimonials" id="testimonials">
-    <h2 class="heading"><i class="fas fa-quote-left"></i> Client <span>Testimonials</span></h2>
-    <p class="section-subtitle">What colleagues and clients say about working with me</p>
+    <div class="section-head">
+      <span class="eyebrow">08 — Testimonials</span>
+      <h2 class="heading">Client <span>Testimonials</span></h2>
+      <p class="section-subtitle">What colleagues and clients say about working with me</p>
+    </div>
 
     <div class="testimonials-grid">
 
       <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
         <div class="quote-icon">"</div>
-        <p>Irfan delivered our Land Information System on time and beyond expectations. His expertise in .NET microservices and Azure saved us months of development time. A true professional.</p>
+        <p>Irfan owned the Land Information System end-to-end — architecture, delivery, the works. When we hit a wall on the .NET microservices side he'd already thought two steps ahead. Easy to hand him ambiguous problems.</p>
         <div class="testimonial-author">
           <div class="author-avatar">W</div>
           <div class="author-info">
@@ -482,9 +540,8 @@
       </div>
 
       <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
         <div class="quote-icon">"</div>
-        <p>One of the best senior engineers I've worked with. Irfan designed our microservices architecture from scratch, integrated Kafka and Redis seamlessly, and always communicated clearly.</p>
+        <p>What stood out working with Irfan was how quickly he'd get into the weeds of a distributed systems problem — Kafka, Redis, the messaging layer — and come back with something that actually held up in production.</p>
         <div class="testimonial-author">
           <div class="author-avatar">A</div>
           <div class="author-info">
@@ -495,9 +552,8 @@
       </div>
 
       <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
         <div class="quote-icon">"</div>
-        <p>Irfan led our Azure migration project and reduced our infrastructure costs significantly. His knowledge of CI/CD, Docker and cloud architecture is exceptional. Highly recommended.</p>
+        <p>Irfan led our Azure migration and just kept finding places to trim cost without anyone asking him to. Reliable, low-drama, and he actually documents things — rarer than it should be.</p>
         <div class="testimonial-author">
           <div class="author-avatar">N</div>
           <div class="author-info">
@@ -520,8 +576,11 @@
 
   <!-- contact section starts -->
   <section class="contact" id="contact">
-    <h2 class="heading"><i class="fas fa-headset"></i> Hire <span>Me</span></h2>
-    <p class="section-subtitle" style="color: var(--text-muted);">Ready to start your project? Let's talk — I typically respond within 24 hours</p>
+    <div class="section-head">
+      <span class="eyebrow">09 — Contact</span>
+      <h2 class="heading">Hire <span>Me</span></h2>
+      <p class="section-subtitle">Ready to start your project? Let's talk — I typically respond within 24 hours</p>
+    </div>
 
     <div class="hire-cta-banner">
       <div class="hire-cta-left">
@@ -529,7 +588,7 @@
           <span class="badge-dot"></span> Available for New Projects
         </div>
         <h3>Let's Build Something Great Together</h3>
-        <p>Whether you need a full-stack solution, API development, cloud setup, or a technical consultant — I'm here to help.</p>
+        <p>Whether you need a full-stack solution, API development, cloud setup, an AI integration, or a technical consultant — I'm here to help.</p>
       </div>
       <div class="hire-cta-right">
         <a href="mailto:irfanali.sen@gmail.com?subject=Freelance%20Project%20Inquiry" class="btn-hire">
@@ -577,7 +636,24 @@
       </div>
 
       <div class="contact-image">
-        <img draggable="false" src="./assets/images/contact1.png" alt="Contact">
+        <div class="code-card">
+          <div class="code-card-head">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="code-card-title">contact.json</span>
+          </div>
+          <div class="code-card-body">
+            <p><span class="c-punc">{</span></p>
+            <p>&nbsp;&nbsp;<span class="c-key">"status"</span><span class="c-punc">:</span> <span class="c-str">"available"</span><span class="c-punc">,</span></p>
+            <p>&nbsp;&nbsp;<span class="c-key">"response_time"</span><span class="c-punc">:</span> <span class="c-str">"&lt; 24h"</span><span class="c-punc">,</span></p>
+            <p>&nbsp;&nbsp;<span class="c-key">"timezone"</span><span class="c-punc">:</span> <span class="c-str">"GMT+3"</span><span class="c-punc">,</span></p>
+            <p>&nbsp;&nbsp;<span class="c-key">"open_to"</span><span class="c-punc">:</span> <span class="c-punc">[</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"full-stack builds"</span><span class="c-punc">,</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"cloud &amp; architecture"</span><span class="c-punc">,</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"AI integrations"</span></p>
+            <p>&nbsp;&nbsp;<span class="c-punc">]</span></p>
+            <p><span class="c-punc">}</span></p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -590,7 +666,7 @@
 
       <div class="box">
         <h3>Irfan Ali</h3>
-        <p>Senior Software Engineer specializing in .NET, Angular and Azure Cloud. Based in Riyadh, Saudi Arabia.</p>
+        <p>Senior Software Engineer specializing in .NET, Angular, Azure Cloud and AI-powered systems. Based in Riyadh, Saudi Arabia.</p>
         <p>Let's build something great together.</p>
       </div>
 
@@ -620,7 +696,7 @@
 
     </div>
 
-    <h1 class="credit">Designed &amp; Built by <a href="https://www.linkedin.com/in/irfanalee/" target="_blank">Irfan Ali</a> &nbsp;·&nbsp; &copy; 2025</h1>
+    <h1 class="credit">Designed &amp; Built by <a href="https://www.linkedin.com/in/irfanalee/" target="_blank">Irfan Ali</a> &nbsp;·&nbsp; &copy; 2026</h1>
   </section>
   <!-- footer section ends -->
 
@@ -639,9 +715,9 @@
     integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- Particles.js -->
-  <script src="./assets/js/particles.min.js"></script>
-  <script src="./assets/js/app.js"></script>
+  <!-- Three.js (hero network graph) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="./assets/js/network-graph.js"></script>
 
   <!-- Vanilla Tilt.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"

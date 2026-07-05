@@ -4,105 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/404.css">
+    <!--
+      This is a GitHub Pages project site (served at /Portfolio/), so paths here
+      are hardcoded to that base rather than relative — GitHub Pages serves this
+      file's markup at whatever URL 404'd, at any depth, so relative paths would
+      resolve inconsistently. If a custom domain is ever added, switch these back
+      to root-relative ("/assets/...").
+    -->
+    <link rel="stylesheet" href="/Portfolio/assets/css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
-    <title>Got Lost! Page Not Found</title>
+    <link id='favicon' rel="shortcut icon" href="/Portfolio/assets/images/favicon.png" type="image/x-png">
+    <title>404 | Irfan Ali</title>
 </head>
-<body oncontextmenu="return false">
+<body>
 
 <!-- navbar starts -->
 <header>
-        <a href="/" class="logo"><i class="fab fa-node-js"></i> Irfan</a>
-
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a href="/#home">Home</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#skills">Skills</a></li>
-            <li><a href="/#education">Education</a></li>
-            <li><a href="/#work">Work</a></li>
-            <li><a href="/#experience">Experience</a></li>
-            <li><a href="/#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <a href="/Portfolio/" class="logo">Irfan <span>Ali</span></a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/Portfolio/#home">Home</a></li>
+            <li><a href="/Portfolio/#about">About</a></li>
+            <li><a href="/Portfolio/#skills">Skills</a></li>
+            <li><a href="/Portfolio/#experience">Experience</a></li>
+            <li><a href="/Portfolio/#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 <!-- navbar ends -->
 
-<!-- 404 section start -->
-<section class="page_404">
-        <div class="container">
-          <div class="wrapper">
-            <h1 class="text-center ">404</h1>
-          </div>
-          
-          <div class="msg">
-          <h3>Looks like you're lost</h3>
-          <p>The page you are looking for is not available!</p>
-           
-          <div class="backbtn">
-            <a href="/" class="btn">
-                <i class="fas fa-arrow-left"></i>
-                <span>Back to Home</span>
-          </a>
-          </div>
-
-          </div>
-        </div>
+<!-- 404 section starts -->
+<section class="experience" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+  <div style="text-align: center; max-width: 60rem;">
+    <span class="eyebrow" style="justify-content: center;">// 404</span>
+    <h1 class="heading">Page <span>Not Found</span></h1>
+    <p class="section-subtitle">The route you requested doesn't resolve to anything on this server. Let's get you back on track.</p>
+    <div class="morebtn" style="margin-top: 3rem;">
+      <a href="/Portfolio/" class="btn">
+        <i class="fas fa-arrow-left"></i>
+        <span>Back to Home</span>
+      </a>
+    </div>
+  </div>
 </section>
-<!-- 404 section end -->
+<!-- 404 section ends -->
 
 <!-- footer section starts -->
 <section class="footer">
-
   <div class="box-container">
 
-      <div class="box">
-          <h3>Irfan's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
-      </div>
+    <div class="box">
+      <h3>Irfan Ali</h3>
+      <p>Senior Software Engineer specializing in .NET, Angular, Azure Cloud and AI-powered systems. Based in Riyadh, Saudi Arabia.</p>
+    </div>
 
-      <div class="box">
-          <h3>quick links</h3>
-          <a href="/#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="/#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="/#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="/#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="/#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-          <a href="/#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
-      </div>
+    <div class="box">
+      <h3>Quick Links</h3>
+      <a href="/Portfolio/#home"><i class="fas fa-chevron-right"></i> Home</a>
+      <a href="/Portfolio/#about"><i class="fas fa-chevron-right"></i> About</a>
+      <a href="/Portfolio/#skills"><i class="fas fa-chevron-right"></i> Skills</a>
+      <a href="/Portfolio/#experience"><i class="fas fa-chevron-right"></i> Experience</a>
+      <a href="/Portfolio/#contact"><i class="fas fa-chevron-right"></i> Contact</a>
+    </div>
 
-      <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+92 317-5883180</p>
-          <p> <i class="fas fa-envelope"></i>irfanali.sen@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Karachi, Pakistan</p>
-          <div class="share">
-
-              <a href="https://www.linkedin.com/in/irfanalee/" class="fab fa-linkedin" target="_blank"></a>
-              <a href="https://github.com/ErfaanAli" class="fab fa-github" target="_blank"></a>
-              <a href="mailto:irfanali.sen@gmail.com" class="fas fa-envelope" target="_blank"></a>
-          </div>
+    <div class="box">
+      <h3>Contact Info</h3>
+      <p><i class="fas fa-phone"></i>+966 557 181 364</p>
+      <p><i class="fas fa-envelope"></i>irfanali.sen@gmail.com</p>
+      <p><i class="fas fa-map-marked-alt"></i>Riyadh, Saudi Arabia</p>
+      <div class="share">
+        <a href="https://www.linkedin.com/in/irfanalee/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+        <a href="https://github.com/ErfaanAli" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+        <a href="mailto:irfanali.sen@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
       </div>
+    </div>
+
   </div>
-
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/irfanalee"> Irfan Ali</a></h1>
-
+  <h1 class="credit">Designed &amp; Built by <a href="https://www.linkedin.com/in/irfanalee/" target="_blank">Irfan Ali</a></h1>
 </section>
 <!-- footer section ends -->
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
-<script src="/assets/js/404.js"></script>
-
+<script>
+  document.getElementById('menu').addEventListener('click', function () {
+    this.classList.toggle('fa-times');
+    document.querySelector('.navbar').classList.toggle('nav-toggle');
+  });
+</script>
 
 </body>
 </html>

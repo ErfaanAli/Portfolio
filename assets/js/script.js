@@ -52,17 +52,17 @@ document.addEventListener('visibilitychange', function () {
 // Typed.js effect
 var typed = new Typed(".typing-text", {
     strings: [
-        ".NET Core &amp; Web APIs",
-        "Angular &amp; TypeScript",
-        "Azure Cloud &amp; DevOps",
-        "Microservices Architecture",
-        "Enterprise SaaS Platforms",
-        "Team Leadership &amp; Mentoring"
+        " .NET Core &amp; AI-assisted backends",
+        " Angular, TypeScript &amp; React",
+        " Azure Cloud &amp; DevOps",
+        " Microservices architecture",
+        " NL-to-SQL &amp; LLM pipelines",
+        " Team leadership &amp; mentoring"
     ],
     loop: true,
-    typeSpeed: 55,
-    backSpeed: 30,
-    backDelay: 1200,
+    typeSpeed: 45,
+    backSpeed: 25,
+    backDelay: 1400,
 });
 
 async function fetchData(type = "skills") {
@@ -74,19 +74,23 @@ async function fetchData(type = "skills") {
     return data;
 }
 
-function showSkills(skills) {
+function showSkills(groups) {
     let skillsContainer = document.getElementById("skillsContainer");
-    let skillHTML = "";
-    skills.forEach(skill => {
-        skillHTML += `
-        <div class="bar">
-          <div class="info">
-            <img src="${skill.icon}" alt="${skill.name}" />
-            <span>${skill.name}</span>
+    let html = "";
+    groups.forEach(group => {
+        html += `
+        <div class="stack-group">
+          <p class="stack-group-title">${group.category}</p>
+          <div class="stack-chips">
+            ${group.items.map(item => `
+            <span class="stack-chip">
+              <img src="${item.icon}" alt="${item.name}" />
+              ${item.name}
+            </span>`).join("")}
           </div>
         </div>`;
     });
-    skillsContainer.innerHTML = skillHTML;
+    skillsContainer.innerHTML = html;
 }
 
 function showProjects(projects) {
@@ -114,7 +118,7 @@ function showProjects(projects) {
         });
     projectsContainer.innerHTML = projectHTML;
 
-    VanillaTilt.init(document.querySelectorAll(".tilt"), { max: 12 });
+    VanillaTilt.init(document.querySelectorAll(".tilt"), { max: 8 });
     srtop.reveal('.work .box', { interval: 200 });
 }
 
@@ -126,22 +130,11 @@ fetchData("projects").then(data => {
     showProjects(data);
 });
 
-VanillaTilt.init(document.querySelectorAll(".tilt"), { max: 12 });
-
-// Disable dev tools shortcuts
-document.onkeydown = function (e) {
-    if (e.keyCode == 123) return false;
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false;
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
-};
-
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
     origin: 'top',
-    distance: '60px',
-    duration: 900,
+    distance: '50px',
+    duration: 800,
     reset: false
 });
 
@@ -149,10 +142,10 @@ const srtop = ScrollReveal({
 srtop.reveal('.home .greeting', { delay: 100 });
 srtop.reveal('.home .content h2', { delay: 200 });
 srtop.reveal('.home .content .hero-subtitle', { delay: 300 });
-srtop.reveal('.home .content p', { delay: 350 });
-srtop.reveal('.home .socials', { delay: 400 });
-srtop.reveal('.home .hero-btns', { delay: 500 });
-srtop.reveal('.home .image', { delay: 300, origin: 'right' });
+srtop.reveal('.home .content .hero-typed-line', { delay: 350 });
+srtop.reveal('.home .hero-btns', { delay: 450 });
+srtop.reveal('.home .socials', { delay: 500 });
+srtop.reveal('.home .hero-widget', { delay: 300, origin: 'right' });
 
 /* About */
 srtop.reveal('.about .image', { delay: 200, origin: 'left' });
@@ -167,8 +160,8 @@ srtop.reveal('.about .resumebtn', { delay: 400 });
 srtop.reveal('.service-card', { interval: 120 });
 
 /* Skills */
-srtop.reveal('.skills .container', { delay: 200 });
-srtop.reveal('.skills .bar', { interval: 80 });
+srtop.reveal('.stack-panel', { delay: 200 });
+srtop.reveal('.stack-group', { interval: 100 });
 
 /* Education */
 srtop.reveal('.education .box', { interval: 250 });
@@ -176,11 +169,8 @@ srtop.reveal('.education .box', { interval: 250 });
 /* Certifications */
 srtop.reveal('.cert-card', { interval: 150 });
 
-/* Projects */
-srtop.reveal('.work .box', { interval: 200 });
-
 /* Experience */
-srtop.reveal('.experience .container', { interval: 300 });
+srtop.reveal('.experience .container', { interval: 250 });
 
 /* Testimonials */
 srtop.reveal('.testimonial-card', { interval: 180 });

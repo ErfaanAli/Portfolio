@@ -1,98 +1,65 @@
 [
-    {
-        "name": "C#",
-        "icon": "assets/images/skills/csharp.png"
-    },
-    {
-        "name": ".NET Core",
-        "icon": "assets/images/skills/dot-net-core.png"
-    },
-    {
-        "name": "ASP.NET",
-        "icon": "assets/images/skills/asp-dot-net.png"
-    },
-    {
-        "name": "EF Core",
-        "icon": "https://img.icons8.com/color/48/000000/microsoft.png"
-    },
-    {
-        "name": "REST API",
-        "icon": "https://img.icons8.com/color/48/000000/api-settings.png"
-    },
-    {
-        "name": "Angular",
-        "icon": "assets/images/skills/angular.png"
-    },
-    {
-        "name": "TypeScript",
-        "icon": "https://img.icons8.com/color/48/000000/typescript.png"
-    },
-    {
-        "name": "JavaScript",
-        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
-    },
-    {
-        "name": "Azure",
-        "icon": "assets/images/skills/azure.png"
-    },
-    {
-        "name": "Docker",
-        "icon": "assets/images/skills/docker.png"
-    },
-    {
-        "name": "Kubernetes",
-        "icon": "assets/images/skills/kubernetes.png"
-    },
-    {
-        "name": "SQL Server",
-        "icon": "https://img.icons8.com/color/48/000000/microsoft-sql-server.png"
-    },
-    {
-        "name": "Cosmos DB",
-        "icon": "assets/images/skills/cosmos.png"
-    },
-    {
-        "name": "Redis",
-        "icon": "https://img.icons8.com/color/48/000000/redis.png"
-    },
-    {
-        "name": "MySQL",
-        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
-    },
-    {
-        "name": "RabbitMQ",
-        "icon": "https://img.icons8.com/color/48/000000/rabbitmq.png"
-    },
-    {
-        "name": "Telerik",
-        "icon": "assets/images/skills/telerik.png"
-    },
-    {
-        "name": "HTML5",
-        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
-    },
-    {
-        "name": "CSS3",
-        "icon": "https://img.icons8.com/color/48/000000/css3.png"
-    },
-    {
-        "name": "Bootstrap",
-        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
-    },
-    {
-        "name": "Power BI",
-        "icon": "https://img.icons8.com/color/48/000000/power-bi.png"
-    },
-    {
-        "name": "GitHub",
-        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
-    },
-    {
-        "name": "Jira",
-        "icon": "https://img.icons8.com/color/48/000000/jira.png"
-    },
-    {
-        "name": "Kibana",
-        "icon": "https://img.icons8.com/color/48/000000/elastic-search.png"
-    }
+  {
+    "category": "Languages & Runtime",
+    "items": [
+      { "name": "C#", "icon": "assets/images/skills/csharp.png" },
+      { "name": ".NET / .NET Core", "icon": "assets/images/skills/dot-net-core.png" },
+      { "name": "Python", "icon": "https://img.icons8.com/color/48/000000/python--v1.png" },
+      { "name": "TypeScript", "icon": "https://img.icons8.com/color/48/000000/typescript.png" },
+      { "name": "JavaScript", "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png" },
+      { "name": "SQL", "icon": "https://img.icons8.com/color/48/000000/sql.png" }
+    ]
+  },
+  {
+    "category": "Frameworks & Frontend",
+    "items": [
+      { "name": "ASP.NET Core", "icon": "assets/images/skills/asp-dot-net.png" },
+      { "name": "Entity Framework Core", "icon": "https://img.icons8.com/color/48/000000/database.png" },
+      { "name": "Angular", "icon": "assets/images/skills/angular.png" },
+      { "name": "React", "icon": "https://img.icons8.com/color/48/000000/react-native.png" },
+      { "name": "Telerik / Kendo UI", "icon": "assets/images/skills/telerik.png" },
+      { "name": "DevExtreme", "icon": "https://img.icons8.com/color/48/000000/api-settings.png" }
+    ]
+  },
+  {
+    "category": "AI & LLM Integration",
+    "items": [
+      { "name": "NL-to-SQL Pipelines", "icon": "https://img.icons8.com/color/48/000000/artificial-intelligence.png" },
+      { "name": "LLM-Assisted Data Ingestion", "icon": "https://img.icons8.com/color/48/000000/robot.png" },
+      { "name": "Claude / Copilot / Codex", "icon": "https://img.icons8.com/color/48/000000/source-code.png" }
+    ]
+  },
+  {
+    "category": "Cloud & DevOps",
+    "items": [
+      { "name": "Azure (App Service, Functions, VMs)", "icon": "assets/images/skills/azure.png" },
+      { "name": "Docker", "icon": "assets/images/skills/docker.png" },
+      { "name": "Kubernetes", "icon": "assets/images/skills/kubernetes.png" },
+      { "name": "CI/CD Pipelines", "icon": "https://img.icons8.com/color/48/000000/workflow.png" },
+      { "name": "Azure Service Bus / Logic Apps", "icon": "https://img.icons8.com/color/48/000000/microsoft.png" }
+    ]
+  },
+  {
+    "category": "Data, Messaging & Search",
+    "items": [
+      { "name": "SQL Server / Azure SQL", "icon": "https://img.icons8.com/color/48/000000/microsoft-sql-server.png" },
+      { "name": "Cosmos DB", "icon": "assets/images/skills/cosmos.png" },
+      { "name": "Redis", "icon": "https://img.icons8.com/color/48/000000/redis.png" },
+      { "name": "RabbitMQ", "icon": "https://img.icons8.com/color/48/000000/queue.png" },
+      { "name": "Kafka", "icon": "https://img.icons8.com/color/48/000000/network.png" },
+      { "name": "Elasticsearch / Kibana", "icon": "https://img.icons8.com/color/48/000000/elasticsearch.png" },
+      { "name": "Memcached", "icon": "https://img.icons8.com/color/48/000000/database.png" }
+    ]
+  },
+  {
+    "category": "Tools & Practices",
+    "items": [
+      { "name": "Git / BitBucket / TFS", "icon": "https://img.icons8.com/color/48/000000/git.png" },
+      { "name": "Jira / Azure DevOps", "icon": "https://img.icons8.com/color/48/000000/jira.png" },
+      { "name": "Power BI / SSRS", "icon": "https://img.icons8.com/color/48/000000/power-bi.png" },
+      { "name": "Grafana", "icon": "https://img.icons8.com/color/48/000000/grafana.png" },
+      { "name": "OAuth / JWT / ABAC", "icon": "https://img.icons8.com/color/48/000000/security-checked.png" },
+      { "name": "Microservices & SOLID", "icon": "https://img.icons8.com/color/48/000000/module.png" }
+    ]
+  }
 ]

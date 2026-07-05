@@ -4,41 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
+    <link id='favicon' rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-png">
     <title>Experience | Irfan Ali</title>
 </head>
-<body oncontextmenu="return false">
+<body>
 
 <!-- navbar starts -->
 <header>
-    <a href="/" class="logo">Irfan <span>Ali</span></a>
+    <a href="../index.html" class="logo">Irfan <span>Ali</span></a>
     <div id="menu" class="fas fa-bars"></div>
     <nav class="navbar">
         <ul>
-            <li><a href="/#home">Home</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#skills">Skills</a></li>
-            <li><a href="/#education">Education</a></li>
-            <li><a href="/#certifications">Certifications</a></li>
-            <li><a class="active" href="/#experience">Experience</a></li>
-            <li><a href="/#contact">Contact</a></li>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#skills">Skills</a></li>
+            <li><a href="../index.html#education">Education</a></li>
+            <li><a href="../index.html#certifications">Certifications</a></li>
+            <li><a class="active" href="#experience">Experience</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 <!-- navbar ends -->
 
 <!-- experience section starts -->
-<section class="experience" id="experience">
+<section class="experience" id="experience" style="padding-top: 12rem;">
 
-  <h2 class="heading"><i class="fas fa-briefcase"></i> Work <span>Experience</span></h2>
-  <div class="quote">
-    <span>Every challenge in your career is an opportunity to grow, innovate, and make a lasting impact.</span>
+  <div class="section-head">
+    <span class="eyebrow">07 — Experience</span>
+    <h2 class="heading">Work <span>Experience</span></h2>
+    <p class="section-subtitle">Every role in your career is a chance to grow, ship, and leave the system better than you found it.</p>
   </div>
 
   <div class="timeline">
+
+    <div class="container left">
+      <div class="content current">
+        <div class="tag">
+          <h2>ESNAD — Saudi Mining Services Company <span class="current-badge"><span class="badge-dot"></span>Current</span></h2>
+        </div>
+        <div class="desc">
+          <h3>Senior Software Engineer</h3>
+          <p class="exp-date"><i class="far fa-calendar-alt"></i> June 2025 — Present</p>
+          <ul>
+            <li>Key architecture lead for digitizing mining license issuance under the Ministry of Industry &amp; Mineral Resources.</li>
+            <li>Built an AI-powered natural-language-to-SQL layer, letting non-technical users query licensing data in plain English.</li>
+            <li>Designed an AI-driven data evaluation pipeline and a text-ingestion module that auto-structures unstructured, user-pasted data.</li>
+            <li>Delivered full-stack solutions (ReactJS, Python, .NET, Angular), using Claude, Copilot &amp; Codex to boost team velocity.</li>
+            <li>Mentoring engineers and leading architecture/delivery as a hands-on senior contributor on a national regulatory platform.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <div class="container right">
       <div class="content">
@@ -47,13 +67,13 @@
         </div>
         <div class="desc">
           <h3>Team Lead / Senior Software Engineer</h3>
-          <p class="exp-date"><i class="far fa-calendar-alt"></i> May 2024 — Present</p>
+          <p class="exp-date"><i class="far fa-calendar-alt"></i> May 2024 — June 2025</p>
           <ul>
-            <li>Architected and led development of a multi-tenant Land Information System as a SaaS platform using .NET, Angular &amp; REST API microservices.</li>
-            <li>Enabled land leasing workflows, valuation tools, ABAC access control using OAuth &amp; JWT, and real-time dashboards for government and real estate clients.</li>
-            <li>Engineered a high-availability, fault-tolerant Caller Location Service (CLS) for Saudi Arabia's National Information Center with millisecond responses using RabbitMQ and Memcached.</li>
-            <li>Set up Elasticsearch for efficient logging and integrated Kibana to analyze logs and monitor system performance.</li>
-            <li>Trained team members and managed deployment for multiple enterprise clients.</li>
+            <li>Architected a multi-tenant Land Information System SaaS with .NET, Angular &amp; microservices, enabling land leasing workflows, valuation tools, ABAC access control via OAuth &amp; JWT.</li>
+            <li>Engineered a high-availability, fault-tolerant Caller Location Service (CLS) for Saudi Arabia's National Information Center with millisecond responses using RabbitMQ &amp; Memcached.</li>
+            <li>Set up Elasticsearch for logging and integrated Kibana to monitor system performance.</li>
+            <li>Built Single Sign-On (SSO) across multiple products and managed deployments for clients including SDAIA, NIC, ESNAD &amp; RCU.</li>
+            <li>Trained team members and led architecture/delivery across multiple enterprise clients.</li>
           </ul>
         </div>
       </div>
@@ -68,9 +88,9 @@
           <h3>Senior Software Engineer</h3>
           <p class="exp-date"><i class="far fa-calendar-alt"></i> March 2023 — September 2023</p>
           <ul>
-            <li>Designed and implemented RESTful APIs using .NET Core and microservices architecture, breaking down monolithic applications.</li>
+            <li>Designed and implemented RESTful APIs using .NET Core and microservices architecture for client Omnivex Corporation, breaking down monolithic applications.</li>
             <li>Integrated Redis, Azure Service Bus, Kafka, and Azure Cosmos DB to enhance performance and enable real-time messaging in distributed environments.</li>
-            <li>Implemented health checks and monitoring for proactive issue detection and high availability.</li>
+            <li>Implemented Kubernetes readiness/liveness probes and .NET Core health checks for proactive issue detection and self-healing deployments.</li>
             <li>Docker-containerized applications for efficient scaling and deployment.</li>
           </ul>
         </div>
@@ -86,8 +106,7 @@
           <h3>Senior Software Engineer</h3>
           <p class="exp-date"><i class="far fa-calendar-alt"></i> May 2022 — February 2023</p>
           <ul>
-            <li>Spearheaded a team to design, develop, and deploy company products using Azure App Service and VMs, improving scalability and reducing operational costs.</li>
-            <li>Successfully migrated systems from Azure virtual servers to App Service, integrating Azure Functions, CI/CD pipelines, Blob Storage, Logic Apps and Azure SQL Managed Instances.</li>
+            <li>Led migration from Azure virtual servers to App Service, integrating Azure Functions, CI/CD pipelines, Blob Storage, Logic Apps and Azure SQL Managed Instances.</li>
             <li>Optimized application performance, reducing load times by 20% through database indexing and code refactoring.</li>
             <li>Designed and integrated multiple CRM projects using ASP.NET, SQL, Telerik, HTML5, CSS3, Bootstrap and JavaScript.</li>
           </ul>
@@ -104,9 +123,9 @@
           <h3>Software Engineer</h3>
           <p class="exp-date"><i class="far fa-calendar-alt"></i> September 2021 — May 2022</p>
           <ul>
-            <li>Led feature development and product enhancements leveraging Azure cloud infrastructure.</li>
+            <li>Independently designed, developed and integrated multiple CRM (Hprime) projects using ASP.NET, SQL and Entity Framework, with Telerik, HTML5, CSS3, Bootstrap and JavaScript on the front end.</li>
             <li>Applied TDD to develop sustainable, maintainable code aligned with business objectives.</li>
-            <li>Reduced support tickets through systematic bug fixes and QA collaboration in CRM systems.</li>
+            <li>Reduced support ticket volume through systematic bug fixes and QA collaboration in CRM systems.</li>
           </ul>
         </div>
       </div>
@@ -119,9 +138,9 @@
         </div>
         <div class="desc">
           <h3>Associate Software Quality Assurance Engineer</h3>
-          <p class="exp-date"><i class="far fa-calendar-alt"></i> November 2018 — August 2021</p>
+          <p class="exp-date"><i class="far fa-calendar-alt"></i> January 2018 — August 2021</p>
           <ul>
-            <li>Developed and executed manual and automated test scripts for REST APIs, SOAP APIs and front-end integration.</li>
+            <li>Developed and executed manual and automated test scripts for REST APIs, SOAP APIs and front-end integration using SoapUI.</li>
             <li>Created and ran QA test cases, scripts and procedures for automated software maintenance.</li>
             <li>Supported the team by replicating and resolving client-reported issues in the staging environment.</li>
           </ul>
@@ -132,7 +151,7 @@
   </div>
 
   <div class="morebtn">
-    <a href="/#experience" class="btn">
+    <a href="../index.html#experience" class="btn">
       <i class="fas fa-arrow-left"></i>
       <span>Back to Home</span>
     </a>
@@ -147,16 +166,16 @@
 
     <div class="box">
       <h3>Irfan Ali</h3>
-      <p>Senior Software Engineer specializing in .NET, Angular and Azure Cloud. Based in Riyadh, Saudi Arabia.</p>
+      <p>Senior Software Engineer specializing in .NET, Angular, Azure Cloud and AI-powered systems. Based in Riyadh, Saudi Arabia.</p>
     </div>
 
     <div class="box">
       <h3>Quick Links</h3>
-      <a href="/#home"><i class="fas fa-chevron-right"></i> Home</a>
-      <a href="/#about"><i class="fas fa-chevron-right"></i> About</a>
-      <a href="/#skills"><i class="fas fa-chevron-right"></i> Skills</a>
-      <a href="/#education"><i class="fas fa-chevron-right"></i> Education</a>
-      <a href="/#experience"><i class="fas fa-chevron-right"></i> Experience</a>
+      <a href="../index.html#home"><i class="fas fa-chevron-right"></i> Home</a>
+      <a href="../index.html#about"><i class="fas fa-chevron-right"></i> About</a>
+      <a href="../index.html#skills"><i class="fas fa-chevron-right"></i> Skills</a>
+      <a href="../index.html#education"><i class="fas fa-chevron-right"></i> Education</a>
+      <a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a>
     </div>
 
     <div class="box">
@@ -184,7 +203,21 @@
 <!-- ScrollReveal -->
 <script src="https://unpkg.com/scrollreveal"></script>
 
-<script src="./script.js"></script>
+<script>
+  $('#menu').click(function () {
+    $(this).toggleClass('fa-times');
+    $('.navbar').toggleClass('nav-toggle');
+  });
+  $(window).on('scroll load', function () {
+    if (window.scrollY > 60) {
+      document.querySelector('#scroll-top').classList.add('active');
+    } else {
+      document.querySelector('#scroll-top').classList.remove('active');
+    }
+  });
+  const srtop = ScrollReveal({ origin: 'top', distance: '50px', duration: 800, reset: false });
+  srtop.reveal('.experience .container', { interval: 250 });
+</script>
 
 </body>
 </html>
